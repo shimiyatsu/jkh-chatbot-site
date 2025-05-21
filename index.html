@@ -7,48 +7,81 @@
   <style>
     body {
       font-family: sans-serif;
-      text-align: center;
+      background: #f9f9f9;
+      margin: 0;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
+      text-align: center;
+      line-height: 1.6;
     }
+
     h1 {
       color: #2a5bd7;
+      margin-bottom: 0.5rem;
     }
+
+    p.description {
+      max-width: 600px;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .qr-section {
+      margin: 2rem 0;
+    }
+
     img.qr {
-      margin: 1.5rem 0;
       width: 200px;
       height: 200px;
     }
-    .section {
+
+    h2 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: #222;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact {
       margin-top: 2rem;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <h1>ЖКХ Чат-бот</h1>
-  <p>Помощник жителям Набережных Челнов по вопросам ЖКХ.</p>
+  <p class="description">
+    Умный помощник для жителей Набережных Челнов. Помогает передавать показания, проверять начисления и связываться с управляющей компанией.
+  </p>
 
-  <div class="section">
-    <p>Сканируйте QR-код для запуска бота в Telegram:</p>
+  <div class="qr-section">
+    <p><strong>Сканируйте QR-код для запуска бота в Telegram:</strong></p>
     <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/zhkh_chelny_bot&size=200x200" alt="QR Telegram бот">
   </div>
 
-  <div class="section">
-    <h2>Возможности:</h2>
-    <p>
-      Передача показаний<br>
-      Проверка начислений<br>
-      Обратная связь с управляющей компанией
-    </p>
-  </div>
+  <h2>Что умеет бот:</h2>
+  <ul>
+    <li>Передача показаний</li>
+    <li>Проверка начислений</li>
+    <li>Обратная связь с управляющей компанией</li>
+  </ul>
 
-  <div class="section">
-    <p>Контакты: <a href="mailto:support@example.com">support@example.com</a></p>
+  <div class="contact">
+    Контакты: <a href="mailto:secondteamoncloudnine@ibuypower.zxc">secondteamoncloudnine@ibuypower.zxc</a>
   </div>
 </body>
 </html>
