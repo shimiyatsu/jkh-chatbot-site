@@ -5,10 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ЖКХ Чат-бот — Набережные Челны</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 2rem; }
-    h1 { color: #2a5bd7; }
-    .button { display: inline-block; padding: 1rem 2rem; background: #2a5bd7; color: white; text-decoration: none; border-radius: 5px; }
-    .section { margin-top: 2rem; }
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #2a5bd7;
+    }
+    img.qr {
+      margin: 1.5rem 0;
+      width: 200px;
+      height: 200px;
+    }
+    .section {
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -16,16 +34,17 @@
   <p>Помощник жителям Набережных Челнов по вопросам ЖКХ.</p>
 
   <div class="section">
-    <a href="https://t.me/your_bot_link" class="button" target="_blank">Запустить бота в Telegram</a>
+    <p>Сканируйте QR-код для запуска бота в Telegram:</p>
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/zhkh_chelny_bot&size=200x200" alt="QR Telegram бот">
   </div>
 
   <div class="section">
     <h2>Возможности:</h2>
-    <ul>
-      <li>Передача показаний</li>
-      <li>Проверка начислений</li>
-      <li>Обратная связь с управляющей компанией</li>
-    </ul>
+    <p>
+      Передача показаний<br>
+      Проверка начислений<br>
+      Обратная связь с управляющей компанией
+    </p>
   </div>
 
   <div class="section">
